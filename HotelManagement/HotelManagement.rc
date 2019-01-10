@@ -1,0 +1,389 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\HotelManagement.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""l.CHS\\afxres.rc""      // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\HotelManagement.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 HotelManagement"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "HotelManagement，1.0 版",IDC_STATIC,35,19,114,8,SS_NOPREFIX
+    LTEXT           "",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "确定",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_HOTELMANAGEMENT_DIALOG DIALOGEX 0, 0, 347, 208
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "HotelManagement"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_TAB1,"SysTabControl32",TCS_BUTTONS,7,7,333,194
+END
+
+IDD_HotelRoom DIALOGEX 0, 0, 370, 218
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,35,354,153
+    PUSHBUTTON      "查询",IDC_BUTTON1,290,14,50,14
+    COMBOBOX        IDC_COMBO1,60,15,48,71,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT1,116,14,157,14,ES_AUTOHSCROLL
+    LTEXT           "查找类型",IDC_STATIC,20,17,34,8
+END
+
+IDD_LiveRecord DIALOGEX 0, 0, 370, 218
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,35,356,86
+    PUSHBUTTON      "查询",IDC_BUTTON1,289,14,50,14
+    COMBOBOX        IDC_COMBO1,59,15,52,71,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT1,133,14,139,14,ES_AUTOHSCROLL
+    LTEXT           "查找类型",IDC_STATIC,19,17,34,8
+    EDITTEXT        IDC_GUESTNAME,63,132,77,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TYPE,182,132,77,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_GUESTID,63,157,77,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_POSITION,182,157,77,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_GUESTPHONE,63,181,77,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LIVEDAYS,182,181,77,14,ES_AUTOHSCROLL
+    LTEXT           "姓名",IDC_STATIC,26,132,18,8
+    LTEXT           "身份证",IDC_STATIC,26,157,27,8
+    LTEXT           "电话",IDC_STATIC,26,181,18,8
+    LTEXT           "客房类型",IDC_STATIC,143,132,35,8
+    LTEXT           "客房位置",IDC_STATIC,143,157,35,8
+    LTEXT           "入住天数",IDC_STATIC,143,181,35,8
+    PUSHBUTTON      "入住",IDC_BUTTON2,286,132,50,14
+    PUSHBUTTON      "退房",IDC_BUTTON3,286,156,50,14
+    PUSHBUTTON      "早退或延期",IDC_BUTTON4,286,179,50,14
+END
+
+IDD_CostRecord DIALOGEX 0, 0, 371, 217
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LIST1,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,35,357,153
+    PUSHBUTTON      "查询",IDC_BUTTON1,288,14,50,14
+    COMBOBOX        IDC_COMBO1,59,15,52,71,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT1,132,14,139,14,ES_AUTOHSCROLL
+    LTEXT           "查找类型",IDC_STATIC,18,17,34,8
+END
+
+IDD_Login DIALOGEX 0, 0, 316, 182
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "用户登录"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,64,119,50,14
+    PUSHBUTTON      "取消",IDCANCEL,159,119,50,14
+    LTEXT           "用户名",IDC_STATIC,33,34,61,19
+    LTEXT           "用户密码",IDC_STATIC,32,66,65,25
+    EDITTEXT        IDC_LoginUserNameEdit,98,34,101,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LoginUserPasswordEdit,97,63,102,17,ES_AUTOHSCROLL
+    PUSHBUTTON      "新建用户",IDC_LoginCreateUserButton,237,33,50,18
+    PUSHBUTTON      "找回密码",IDC_LoginFindPasswirdButton,237,62,49,19
+END
+
+IDD_CreateUser DIALOGEX 0, 0, 316, 182
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "新建用户"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,60,138,50,14
+    PUSHBUTTON      "取消",IDCANCEL,154,138,50,14
+    LTEXT           "管理员密码",IDC_STATIC,35,24,56,14
+    LTEXT           "新建用户名",IDC_STATIC,35,49,58,23
+    LTEXT           "请输入用户密码",IDC_STATIC,33,75,61,22
+    LTEXT           "再次输入用户密码",IDC_STATIC,34,103,64,21
+    EDITTEXT        IDC_CreateManagePasswordEdit,117,22,106,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CreateUserNameEdit,117,49,106,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CreateUserPasswordEdit,117,74,106,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CreateUserPassword2Edit,117,98,105,14,ES_AUTOHSCROLL
+END
+
+IDD_FindPassword DIALOGEX 0, 0, 316, 182
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "找回密码"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,59,132,50,14
+    PUSHBUTTON      "取消",IDCANCEL,156,133,50,14
+    LTEXT           "管理员密码",IDC_STATIC,34,27,88,18
+    LTEXT           "用户名",IDC_STATIC,33,49,83,18
+    LTEXT           "用户新密码",IDC_STATIC,34,70,86,25
+    LTEXT           "再次输入用户新密码",IDC_STATIC,34,92,85,22
+    EDITTEXT        IDC_FindManagePasswordEdit,110,23,117,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FindUserNameEdit,111,44,117,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FindUserPasswordEdit,111,67,117,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FindUserPassword2Edit,111,90,118,15,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "TODO: <文件说明>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "HotelManagement.exe"
+            VALUE "LegalCopyright", "TODO: (C) <公司名>。保留所有权利。"
+            VALUE "OriginalFilename", "HotelManagement.exe"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_HOTELMANAGEMENT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 340
+        VERTGUIDE, 344
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 201
+    END
+
+    IDD_HotelRoom, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 361
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 211
+    END
+
+    IDD_LiveRecord, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 363
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 211
+    END
+
+    IDD_CostRecord, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 364
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 210
+    END
+
+    IDD_Login, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 175
+    END
+
+    IDD_CreateUser, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 175
+    END
+
+    IDD_FindPassword, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 175
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_HotelRoom DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 5, 0
+0xdbbc, 0xf1b8, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xe0c0, 0xcdd0, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xbbce, 0xc3d6, "\000" 
+    IDC_COMBO1, 0x403, 5, 0
+0xd5bf, 0xbfb7, "\000" 
+    0
+END
+
+IDD_LiveRecord DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 9, 0
+0xcdbf, 0xcbc8, 0xe7b5, 0xb0bb, "\000" 
+    IDC_COMBO1, 0x403, 11, 0
+0xcdbf, 0xcbc8, 0xedc9, 0xddb7, 0xa4d6, "\000" 
+    IDC_COMBO1, 0x403, 9, 0
+0xcdbf, 0xcbc8, 0xd5d0, 0xfbc3, "\000" 
+    0
+END
+
+IDD_CostRecord DLGINIT
+BEGIN
+    IDC_COMBO1, 0x403, 9, 0
+0xcdbf, 0xbfb7, 0xbbce, 0xc3d6, "\000" 
+    IDC_COMBO1, 0x403, 9, 0
+0xcdbf, 0xcbc8, 0xe7b5, 0xb0bb, "\000" 
+    IDC_COMBO1, 0x403, 11, 0
+0xcdbf, 0xcbc8, 0xedc9, 0xddb7, 0xa4d6, "\000" 
+    IDC_COMBO1, 0x403, 9, 0
+0xcdbf, 0xcbc8, 0xd5d0, 0xfbc3, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 HotelManagement(&A)..."
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\HotelManagement.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "l.CHS\afxres.rc"      // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
